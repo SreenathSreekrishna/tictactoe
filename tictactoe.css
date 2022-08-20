@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html {
+    font-family: 'Roboto',sans-serif;
+    background: #000;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+}
+
+#reset {
+    font-family: 'Roboto';
+    margin:auto;
+    margin-top:10px;
+    font-size:20px;
+    background-color: #333;
+    color:#fff;
+    border-radius: 1.5rem;
+    padding: 15px;
+    border:none;
+}
+
+#reset:hover {
+    cursor:pointer;
+    background-color: #444;
+}
+
+.renderer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    margin-top:10px;
+    width:170px;
+    height:90px;
+    background-color: #333;
+    border-radius: 10%;
+    color:#fff;
+    font-size:30px;
+}
+
+.styled {
+    width:20px !important;
+    height:20px !important;
+    margin-left:-27px;
+    margin-top:10px;
+    display:inline-block;
+    position:absolute;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.styled:hover {
+    background-color: #222;
+    cursor:pointer;
+}
+
+input:checked + .styled{
+    background-color: #666;
+}
+
+input:checked + .styled:hover{
+    background-color:#555;
+}
+
+.inp {
+    margin:auto;
+    margin-left:20px;
+}
+
+.box {
+    color:#fff;
+    font-size: 50px;
+    text-align: center;
+    height: 100px;
+    width:100px;
+    background: #444;
+}
+
+.box:hover {
+    background: #555;
+    cursor: pointer;
+}
+
+.statusBox {
+    margin-top: 3px;
+    height: 80px;
+    font-size: 50px;
+    background: #333;
+    text-align: center;
+    color:white;
+}
+
+.green {
+    color: greenyellow !important;
+}
+
+.red {
+    color: red !important;
+}
+
+.grey {
+    color: #777;
+}
