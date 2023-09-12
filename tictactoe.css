@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+:root {
+    --w: 100px;
+}
+
 html {
     font-family: 'Roboto',sans-serif;
     background: #000;
@@ -28,10 +32,9 @@ html {
 }
 
 .renderer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -45%);
+    width: calc(var(--w) * 3);
+    margin: auto;
+    margin-top: 20px;
 }
 
 form {
@@ -80,8 +83,8 @@ input:checked + .styled:hover{
     color:#fff;
     font-size: 50px;
     text-align: center;
-    height: 100px;
-    width:100px;
+    height: var(--w);
+    width:var(--w);
     background: #444;
 }
 
